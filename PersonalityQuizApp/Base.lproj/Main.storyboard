@@ -29,6 +29,9 @@
                                         <rect key="frame" x="0.0" y="52" width="282" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Начать опрос"/>
+                                        <connections>
+                                            <segue destination="5G1-Sf-iTN" kind="show" id="TR5-FW-wzc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -77,9 +80,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="80"/>
+            <point key="canvasLocation" x="94" y="75"/>
+        </scene>
+        <!--Вопрос №-->
+        <scene sceneID="SoM-lw-hhN">
+            <objects>
+                <viewController id="srQ-jQ-h39" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CCf-eO-GBN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qnG-nl-zrG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="kYw-tx-cpK">
+                        <barButtonItem key="rightBarButtonItem" title="3 =&gt;" id="Dax-2E-rBp">
+                            <connections>
+                                <segue destination="1zL-by-icC" kind="show" id="VFH-cc-EtC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="1zL-by-icC" kind="show" identifier="resultSegue" id="yng-TW-ZJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FG-SC-Zb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="77"/>
+        </scene>
+        <!--Результаты-->
+        <scene sceneID="hmN-f8-OBm">
+            <objects>
+                <viewController id="1zL-by-icC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Iv-xs-jKk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wxU-ll-Vla">
+                                <rect key="frame" x="20" y="231.5" width="280" height="149.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы -🐶!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxv-Mv-Kwd">
+                                        <rect key="frame" x="58.5" y="0.0" width="163.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вам нравится быть с друзьями. Вы окружаете себя людьми, которые Вам нравятся и всегда Вы готовы помочь." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-8o-Wwv">
+                                        <rect key="frame" x="0.0" y="68" width="280" height="81.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nT9-xE-dCw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wxU-ll-Vla" firstAttribute="centerY" secondItem="4Iv-xs-jKk" secondAttribute="centerY" constant="32" id="FFg-N0-VJX"/>
+                            <constraint firstItem="wxU-ll-Vla" firstAttribute="leading" secondItem="nT9-xE-dCw" secondAttribute="leading" constant="20" id="kQn-WC-oEb"/>
+                            <constraint firstAttribute="trailing" secondItem="wxU-ll-Vla" secondAttribute="trailing" constant="20" id="xOU-e5-Jj8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результаты" id="nI1-cP-jkF">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="G6c-fB-pd7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ym0-rn-xXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2595" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hxc-Hr-ARA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5G1-Sf-iTN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="CdA-EB-ciH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="CEZ-si-4n7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="srQ-jQ-h39" kind="relationship" relationship="rootViewController" id="JgI-vX-r52"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTA-Ki-vxw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="76"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yng-TW-ZJj"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
