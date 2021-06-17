@@ -178,7 +178,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Uu6-qP-KKK">
-                                <rect key="frame" x="20" y="238" width="280" height="136"/>
+                                <rect key="frame" x="20" y="235" width="280" height="142"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M6n-ZW-X3O">
                                         <rect key="frame" x="-2" y="0.0" width="284" height="31"/>
@@ -201,7 +201,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAr-nV-9jR">
-                                        <rect key="frame" x="0.0" y="106" width="280" height="30"/>
+                                        <rect key="frame" x="0.0" y="106" width="280" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
                                     </button>
@@ -221,12 +221,6 @@
                             <constraint firstItem="qnG-nl-zrG" firstAttribute="trailing" secondItem="Knu-JF-qfa" secondAttribute="trailing" constant="20" id="fFM-4c-pTP"/>
                             <constraint firstItem="mZn-WI-kQj" firstAttribute="leading" secondItem="qnG-nl-zrG" secondAttribute="leading" constant="20" id="hjT-DL-VyZ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Knu-JF-qfa"/>
-                                <exclude reference="Uu6-qP-KKK"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="kYw-tx-cpK">
                         <barButtonItem key="rightBarButtonItem" title="3 =&gt;" id="Dax-2E-rBp">

@@ -13,6 +13,10 @@
 		B5E9E3F1267886EF00DAEFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E9E3EF267886EF00DAEFC4 /* Main.storyboard */; };
 		B5E9E3F3267886F900DAEFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E9E3F2267886F900DAEFC4 /* Assets.xcassets */; };
 		B5E9E3F6267886F900DAEFC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E9E3F4267886F900DAEFC4 /* LaunchScreen.storyboard */; };
+		B5E9E3FE267B1BE600DAEFC4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9E3FD267B1BE600DAEFC4 /* Question.swift */; };
+		B5E9E405267B6FE700DAEFC4 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9E404267B6FE700DAEFC4 /* ResponseType.swift */; };
+		B5E9E407267B716300DAEFC4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9E406267B716300DAEFC4 /* Answer.swift */; };
+		B5E9E409267B71FA00DAEFC4 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9E408267B71FA00DAEFC4 /* AnimalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B5E9E3F2267886F900DAEFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E9E3F5267886F900DAEFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5E9E3F7267886F900DAEFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E9E3FD267B1BE600DAEFC4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B5E9E404267B6FE700DAEFC4 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		B5E9E406267B716300DAEFC4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		B5E9E408267B71FA00DAEFC4 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		B5E9E3E8267886EF00DAEFC4 /* PersonalityQuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				B5E9E3E9267886EF00DAEFC4 /* AppDelegate.swift */,
-				B5E9E3EB267886EF00DAEFC4 /* SceneDelegate.swift */,
+				B5E9E3FF267B1C0100DAEFC4 /* model */,
+				B5E9E401267B4EB100DAEFC4 /* View */,
+				B5E9E400267B4DE800DAEFC4 /* Controller */,
+				B5E9E402267B4ED800DAEFC4 /* Supporting Files */,
+				B5E9E403267B6EAE00DAEFC4 /* Resources */,
+			);
+			path = PersonalityQuizApp;
+			sourceTree = "<group>";
+		};
+		B5E9E3FF267B1C0100DAEFC4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9E3FD267B1BE600DAEFC4 /* Question.swift */,
+				B5E9E404267B6FE700DAEFC4 /* ResponseType.swift */,
+				B5E9E406267B716300DAEFC4 /* Answer.swift */,
+				B5E9E408267B71FA00DAEFC4 /* AnimalType.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B5E9E400267B4DE800DAEFC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				B5E9E3ED267886EF00DAEFC4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5E9E401267B4EB100DAEFC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9E3EB267886EF00DAEFC4 /* SceneDelegate.swift */,
 				B5E9E3EF267886EF00DAEFC4 /* Main.storyboard */,
-				B5E9E3F2267886F900DAEFC4 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5E9E402267B4ED800DAEFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9E3E9267886EF00DAEFC4 /* AppDelegate.swift */,
 				B5E9E3F4267886F900DAEFC4 /* LaunchScreen.storyboard */,
 				B5E9E3F7267886F900DAEFC4 /* Info.plist */,
 			);
-			path = PersonalityQuizApp;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5E9E403267B6EAE00DAEFC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9E3F2267886F900DAEFC4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E9E3EE267886EF00DAEFC4 /* ViewController.swift in Sources */,
+				B5E9E3FE267B1BE600DAEFC4 /* Question.swift in Sources */,
 				B5E9E3EA267886EF00DAEFC4 /* AppDelegate.swift in Sources */,
+				B5E9E407267B716300DAEFC4 /* Answer.swift in Sources */,
 				B5E9E3EC267886EF00DAEFC4 /* SceneDelegate.swift in Sources */,
+				B5E9E405267B6FE700DAEFC4 /* ResponseType.swift in Sources */,
+				B5E9E409267B71FA00DAEFC4 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = PersonalityQuizApp/Info.plist;
+				INFOPLIST_FILE = "PersonalityQuizApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = PersonalityQuizApp/Info.plist;
+				INFOPLIST_FILE = "PersonalityQuizApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
